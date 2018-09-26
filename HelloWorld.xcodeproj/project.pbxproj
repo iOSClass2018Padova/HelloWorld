@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B503B4E2158D4B0004C142B /* PrimaClasse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B503B4D2158D4B0004C142B /* PrimaClasse.swift */; };
 		7B860E382150E845000E598D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E372150E845000E598D /* AppDelegate.swift */; };
-		7B860E3A2150E845000E598D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E392150E845000E598D /* ViewController.swift */; };
 		7B860E3D2150E845000E598D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B860E3B2150E845000E598D /* Main.storyboard */; };
 		7B860E3F2150E846000E598D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B860E3E2150E846000E598D /* Assets.xcassets */; };
 		7B860E422150E847000E598D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B860E402150E847000E598D /* LaunchScreen.storyboard */; };
 		7B860E4D2150E847000E598D /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E4C2150E847000E598D /* HelloWorldTests.swift */; };
 		7B860E582150E847000E598D /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E572150E847000E598D /* HelloWorldUITests.swift */; };
+		7B860E6821514F2F000E598D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E6721514F2F000E598D /* TableViewController.swift */; };
+		7B860E6A2151517A000E598D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E692151517A000E598D /* TableViewCell.swift */; };
+		7B860E6C2151567F000E598D /* PippoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B860E6B2151567F000E598D /* PippoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B503B4D2158D4B0004C142B /* PrimaClasse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaClasse.swift; sourceTree = "<group>"; };
 		7B860E342150E845000E598D /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B860E372150E845000E598D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B860E392150E845000E598D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B860E3C2150E845000E598D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B860E3E2150E846000E598D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B860E412150E847000E598D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		7B860E532150E847000E598D /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B860E572150E847000E598D /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		7B860E592150E847000E598D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B860E6721514F2F000E598D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7B860E692151517A000E598D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7B860E6B2151567F000E598D /* PippoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PippoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				7B860E372150E845000E598D /* AppDelegate.swift */,
-				7B860E392150E845000E598D /* ViewController.swift */,
+				7B860E6B2151567F000E598D /* PippoController.swift */,
+				7B860E6721514F2F000E598D /* TableViewController.swift */,
+				7B860E692151517A000E598D /* TableViewCell.swift */,
+				7B503B4D2158D4B0004C142B /* PrimaClasse.swift */,
 				7B860E3B2150E845000E598D /* Main.storyboard */,
 				7B860E3E2150E846000E598D /* Assets.xcassets */,
 				7B860E402150E847000E598D /* LaunchScreen.storyboard */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B860E3A2150E845000E598D /* ViewController.swift in Sources */,
+				7B860E6C2151567F000E598D /* PippoController.swift in Sources */,
+				7B860E6A2151517A000E598D /* TableViewCell.swift in Sources */,
 				7B860E382150E845000E598D /* AppDelegate.swift in Sources */,
+				7B503B4E2158D4B0004C142B /* PrimaClasse.swift in Sources */,
+				7B860E6821514F2F000E598D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +444,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.eggon.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,16 +465,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.eggon.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
